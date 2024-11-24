@@ -41,17 +41,17 @@ $(call inherit-product, vendor/$(CUSTOM_VENDOR)/config/common.mk)
 BOARD_VENDOR := $(or $(word 2,$(subst /, ,$(firstword $(MAKEFILE_LIST)))),$(value 2))
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := monet
-PRODUCT_NAME := $(CUSTOM_VENDOR)_monet
+PRODUCT_DEVICE := milito
+PRODUCT_NAME := $(CUSTOM_VENDOR)_milito
 PRODUCT_BRAND := xiaomi
-PRODUCT_MODEL := $(shell echo $(PRODUCT_BRAND) | tr  '[:lower:]' '[:upper:]')_monet
+PRODUCT_MODEL := $(shell echo $(PRODUCT_BRAND) | tr  '[:lower:]' '[:upper:]')_milito
 PRODUCT_MANUFACTURER := $(PRODUCT_BRAND)
 
 # Common path for device trees
 COMMON_PATH := device/xiaomi/sm8250-common
 
 # Device path for OEM device tree
-DEVICE_PATH := device/xiaomi/monet
+DEVICE_PATH := device/xiaomi/milito
 
 # Inherit from hardware-specific part of the product configuration
 $(call inherit-product, $(DEVICE_PATH)/device.mk)

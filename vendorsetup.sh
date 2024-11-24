@@ -18,7 +18,7 @@
 #
 git clone https://github.com/alecchangod/android_device_xiaomi_sm8250-common-twrp device/xiaomi/sm8250-common
 git clone https://github.com/TeamWin/proprietary_vendor_xiaomi --depth=1 vendor/xiaomi
-FDEVICE="monet"
+FDEVICE="milito"
 #set -o xtrace
 
 fox_get_target_device() {
@@ -46,7 +46,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
         export FOX_RECOVERY_BOOT_PARTITION="/dev/block/by-name/boot"
 
         # Alternate Codenames
-        export TARGET_DEVICE_ALT="monet,vangogh"
+        export TARGET_DEVICE_ALT="milito,monet,vangogh,picasso,picasso_48m"
 
         export OF_USE_GREEN_LED=0
         export OF_HIDE_NOTCH=1
