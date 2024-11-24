@@ -22,6 +22,10 @@
 # Assert
 TARGET_OTA_ASSERT_DEVICE := monet,vangogh,picasso,picasso_48m,milito
 
+# Init
+TARGET_INIT_VENDOR_LIB ?= //$(DEVICE_PATH):init_xiaomi_milito
+TARGET_RECOVERY_DEVICE_MODULES ?= init_xiaomi_milito
+
 # Prebuilts
 TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
 
