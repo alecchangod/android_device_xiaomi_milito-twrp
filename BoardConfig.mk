@@ -19,6 +19,9 @@
 # product configuration (apps).
 #
 
+# Assert
+TARGET_OTA_ASSERT_DEVICE := monet,vangogh,picasso,picasso_48m,milito
+
 # Prebuilts
 TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
 
